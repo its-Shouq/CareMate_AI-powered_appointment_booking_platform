@@ -1,16 +1,10 @@
-# Care Connect AI
+# CareFlow: AI-powered appointment booking platform
 
-إليك صيغة وثيقة متطلبات الأعمال (Business Requirements Document - BRD) جاهزة ومصممة وفق المعايير الاحترافية لتقديمها في التحدي الابتكاري أو للمحتكمين والشركاء التنفيذيين:
+# مسار "رعايتي المستمرة" لتطوير حجز المواعيد بالذكاء الاصطناعي
 
-وثيقة متطلبات الأعمال (BRD)
+# الجهة المبتكرة: تحدي الابتكار الصحي
 
-اسم المشروع: مسار "رعايتي المستمرة" لتطوير حجز المواعيد بالذكاء الاصطناعي
-
-الجهة المبتكرة: فريق تحدي الابتكار الصحي
-
-الجهة المستهدفة: مركز التأمين الصحي الوطني / وزارة الصحة (تطبيق صحتي)
-
-التاريخ: سبتمبر 2026
+# الجهة المستهدفة: مركز التأمين الصحي الوطني / وزارة الصحة (تطبيق صحتي)
 
 1. ملخص المشروع (Executive Summary)
 
@@ -104,21 +98,4 @@ This project was built with [Lovable](https://lovable.dev).
 
 **Live app**: https://health-mate-flow.lovable.app
 
-## Build with Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/a010c784-af5e-4b49-a358-b9e73b823a53).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
