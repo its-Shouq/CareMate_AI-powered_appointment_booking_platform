@@ -1,4 +1,3 @@
-# CareFlow: AI-powered appointment booking platform
 
 # مسار "رعايتي المستمرة" لتطوير حجز المواعيد بالذكاء الاصطناعي
 
