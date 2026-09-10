@@ -1,102 +1,94 @@
+# CareMate - AI-Driven Appointment Booking Enhancement
 
-# مسار "رعايتي المستمرة" لتطوير حجز المواعيد بالذكاء الاصطناعي
+# Innovator:
+Health Innovation Challenge
 
-# الجهة المبتكرة:
-تحدي الابتكار الصحي
+# Target Entity:
+National Health Insurance Center / Ministry of Health (Sehhaty App)
 
-# الجهة المستهدفة:
-مركز التأمين الصحي الوطني / وزارة الصحة (تطبيق صحتي)
+---
 
-1. ملخص المشروع (Executive Summary)
+**1. Executive Summary**
 
-يهدف هذا المشروع إلى إعادة صياغة رحلة مريض الأمراض المزمنة في المراكز الصحية الأولية عبر دمج خوارزميات الذكاء الاصطناعي في تطبيق "صحتي". يعمل النظام على تحليل شكوى المريض عند حجز الموعد، وفرز الحالة تلقائياً إلى (حضور فعلي أو عيادة افتراضية)، والتأكيد التفاعلي للمواعيد، ونقل ملخص حالة المريض للطبيب المعالج قبل الزيارة. يهدف هذا الحل إلى تحسين تجربة المستفيد، وتقليل المواعيد المهدرة، والوصول بمتوسط زيارات مريض الأمراض المزمنة إلى 4 زيارات وقائية سنوياً بحلول عام 2030.
+This project aims to re-engineer the journey for chronic disease patients in primary healthcare centers by integrating artificial intelligence algorithms into the "Sehhaty" application. The system analyzes patient complaints upon booking, automatically triages cases into (in-person attendance or virtual clinic), provides interactive appointment confirmations, and transfers a summary of the patient's condition to the treating physician prior to the visit. This solution aims to improve beneficiary experience, reduce wasted appointments, and reach an average of 4 preventive visits annually per chronic disease patient by 2030.
 
-2. دوافع المشروع والأهداف التشغيلية (Business Objectives)
+---
 
-* زيادة معدل المتابعة الوقائية: رفع نسبة التزام مرضى الأمراض المزمنة بالزيارات الدورية الأربع خلال العام.
+**2. Business Objectives**
 
-* تقليل نسبة عدم الحضور (No-Show Rate): استغلال المواعيد المهدورة من خلال أتمتة الإلغاء والتأكيد وإعادة التوجيه التلقائي لقوائم الانتظار.
+* **Increase Preventive Follow-up Rate:** Raise the compliance rate of chronic disease patients for the 4 periodic visits throughout the year.
+* **Reduce No-Show Rate:** Minimize wasted appointments through automated cancellation, confirmation, and automatic redirection to waiting lists.
+* **Enhance Physician Time Efficiency:** Reduce history-taking time inside the clinic by 30% to 40% by providing an intelligent complaint summary in advance.
+* **Optimal Capacity Utilization:** Redirect stable cases to virtual clinics and reduce overcrowding inside primary healthcare centers.
 
-* رفع كفاءة وقت الطبيب: تقليل وقت أخذ التاريخ المرضي داخل العيادة بنسبة 30% إلى 40% عبر إتاحة ملخص الشكوى الذكي مسبقاً.
+---
 
-* الاستغلال الأمثل للطاقة الاستيعابية: تحويل الحالات المستقرة للعيادات الافتراضية وتقليل الازدحام داخل المراكز الصحية الأولية.
+**3. Project Scope**
 
-3. نطاق العمل (Project Scope)
+**A. In-Scope:**
 
-أ. ما يغطيه المشروع (In-Scope):
+* **Patient Interface (Sehhaty App):**
+* Complaint and readings input module (Text / Voice via AI Chatbot).
+* Smart Triage Algorithm (In-person vs. Virtual).
+* Interactive reminder/confirmation system and automated appointment updates.
 
-* واجهة المريض (تطبيق صحتي):
 
-   * وحدة إدخال الشكوى والقراءات (نصي / صوتي عبر AI Chatbot).
+* **Physician Interface (Clinic System / Telemedicine):**
+* Dashboard displaying a "Complaint Summary Card" prior to patient entry.
 
-   * خوارزمية الفرز الذكي (حضوري vs افتراضي).
 
-   * نظام التذكير والتأكيد التفاعلي وتحديث المواعيد آلياً.
+* **Waiting List Management:**
+* Automated re-allocation of declined/canceled appointments to patients registered on the urgent waiting list.
 
-* واجهة الطبيب (نظام العيادات / الطب الاتصالي):
 
-   * لوحة تحكم تظهر "بطاقة ملخص الشكوى" قبل دخول المريض.
 
-* إدارة قوائم الانتظار:
+**B. Out-of-Scope:**
 
-   * إعادة إتاحة المواعيد المرفوضة/الملغاة آلياً للمرضى المسجلين في قائمة الانتظار المستعجل.
+* Final medical diagnosis or medication dispensing without human physician review.
+* Acute emergency cases (redirected immediately to emergency and ambulance services).
 
-ب. ما لا يغطيه المشروع (Out-of-Scope):
+---
 
-* التشخيص الطبي النهائي أو صرف الأدوية دون مراجعة الطبيب البشرية.
+**4. Functional Requirements**
 
-* الحالات الطارئة الحادة (تُحول فوراً لخدمات الإسعاف والطوارئ).
+| # | Feature / Requirement | Description |
+| --- | --- | --- |
+| **FR-01** | Smart Complaint Collection | Enable patients to write or record complaints and current readings (blood pressure/glucose) via the smart assistant when requesting an appointment. |
+| **FR-02** | Automated Smart Triage | Analyze input data and automatically guide the patient to an in-person clinic or virtual consultation based on pre-set medical criteria. |
+| **FR-03** | Interactive Reminders & Confirmation | Send automated smart alerts/calls 48 and 24 hours prior to the appointment requiring attendance confirmation or cancellation. |
+| **FR-04** | Waste & Vacancy Management | Upon patient cancellation, the system immediately offers the appointment to the next patient on the waiting list and schedules a new appointment for the canceling patient. |
+| **FR-05** | Physician Summary Card | Generate an executive summary of the patient's complaint and readings, displayed on the physician's medical record screen before starting the examination. |
+| **FR-06** | Accessibility Features | Provide voice input to support the elderly, and enable the "Family Caregiver" option to manage relatives' appointments. |
 
-4. متطلبات الأعمال والوظائف الرئيسية (Functional Requirements)
+---
 
-| الرقم | الميزة / المتطلب | الوصف |
+**5. Non-Functional Requirements**
 
-|---|---|---|
+* **Security & Privacy:** Encrypt all medical data and comply with National Cybersecurity Authority regulations and personal data protection laws.
+* **User Experience (UX):** Design a simple, interactive interface suitable for all age groups (elderly and chronic disease patients).
+* **Performance & Reliability:** AI assistant response time under 2 seconds, with 99.9% system availability.
 
-| FR-01 | جمع الشكوى الذكي | تمكين المريض من كتابة أو تسجيل شكواه وقراءاته الحالية (ضغط/سكر) عبر المساعد الذكي عند طلب حجز موعد. |
+---
 
-| FR-02 | الفرز الآلي (Smart Triage) | تحليل البيانات المدخلة وتوجيه المريض تلقائياً بناءً على محددات طبية مسبقة إلى عيادة حضورية أو استشارة افتراضية. |
+**6. Risk Management**
 
-| FR-03 | التذكير والتأكيد التفاعلي | إرسال تنبيهات/مكالمات آلية ذكية قبل الموعد بـ 48 و24 ساعة تتطلب تأكيد الحضور أو الاعتذار. |
+| Expected Risk | Impact Level | Mitigation Strategy |
+| --- | --- | --- |
+| Automated Triage Error | High | Maintain a manual override option, backed by a quick triage nurse review prior to appointment confirmation when necessary. |
+| Tech Usability Challenges for Elderly | Medium | Support Voice AI input and allow account linking to a "Family Caregiver." |
+| User Resistance to Change | Low | Launch awareness campaigns emphasizing that AI is a supportive tool for better service, not a replacement for human care. |
 
-| FR-04 | إدارة الهدر والشواغر | عند اعتذار المريض، يقوم النظام فوراً بتحويل الموعد للمريض التالي في قائمة الانتظار وإعادة جدولة المعتذر. |
+---
 
-| FR-05 | بطاقة ملخص الطبيب | توليد ملخص تنفيذي لشكوى المريض وقراءاته ويتم عرضه للطبيب في شاشة الملف الطبي قبل بدء المعاينة. |
+**7. Key Performance Indicators (KPIs)**
 
-| FR-06 | خيارات الوصول السهل | توفير الإدخال الصوتي لدعم كبار السن، وتفعيل خيار "الراعي الأسري" لإدارة مواعيد الأقارب. |
+* **Adherence Rate:** Increase the proportion of patients completing 4 periodic visits annually to 80%.
+* **Appointment Utilization:** Reduce the no-show rate by more than 50%.
+* **Visit Duration:** Decrease time spent taking patient complaints inside the clinic by 5 minutes per patient.
+* **Beneficiary Satisfaction:** Raise the patient satisfaction index for appointment booking and management to 90%.
 
-5. المتطلبات غير الوظيفية (Non-Functional Requirements)
-
-* الأمان والخصوصية (Security & Privacy): تشفير كافة البيانات الطبية والالتزام بضوابط الهيئة الوطنية للأمن السيبراني وقوانين حماية البيانات الشخصية.
-
-* سهولة الاستخدام (User Experience): تصميم واجهة بسيطة وتفاعلية تتناسب مع كافة الفئات العمرية (كبار السن وأصحاب الأمراض المزمنة).
-
-* الأداء والاعتمادية (Performance): استجابة المساعد الذكي خلال أقل من ثانيتين، وجاهزية النظام للعمل بنسبة 99.9%.
-
-6. تقييم المخاطر وحلول التخفيف (Risk Management)
-
-| الخطر المتوقع | مستوى التأثير | استراتيجية التخفيف |
-
-|---|---|---|
-
-| خطأ في الفرز الآلي للحالة | مرتفع | إبقاء خيار التعديل اليدوي، مع مراجعة سريعة من تمريض الفرز عند الحاجة قبل اعتماد الموعد. |
-
-| صعوبة استخدام التقنية لكبار السن | متوسط | دعم الإدخال الصوتي (Voice AI) وإتاحة ربط الحساب بـ "الراعي الأسري". |
-
-| مقاومة التغيير من المراجعين | منخفض | إطلاق حملات توعوية وتأكيد أن الذكاء الاصطناعي أداة مساعدة لخدمة أفضل وليس بديلاً للرعاية البشرية. |
-
-7. مؤشرات قياس الأداء والنجاح (Key Performance Indicators - KPIs)
-
-* معدل الالتزام: زيادة نسبة المرضى الذين يكملون 4 زيارات دورية سنوياً إلى 80%.
-
-* استغلال المواعيد: خفض نسبة عدم الحضور (No-Show) بأكثر من 50%.
-
-* زمن الزيارة: خفض الوقت المستغرق في استكشاف الشكوى داخل العيادة بمقدار 5 دقائق لكل مريض.
-
-* رضا المستفيد: رفع مؤشر رضا المرضى عن تجربة حجز وإدارة المواعيد إلى90
+---
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://health-mate-flow.lovable.app
-
-
+**Live app**: [https://health-mate-flow.lovable.app](https://health-mate-flow.lovable.app)
